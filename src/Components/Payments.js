@@ -37,27 +37,27 @@ const App = () => {
       id: '1',
       name: 'sujith',
       mobile: '9056095182',
-      expiry: '2023-06-02',
+      expiry: '02-06-2023 ',
       domain: 'sujithr@god.com',
       amount: 7,
-      nextCall: '2023-05-30',
+      nextCall: ' 30-05-2023',
       action: '',
     },
     {
       id: '2',
       name: 'amirtha',
       mobile: '7056095182',
-      expiry: '2023-05-31',
+      expiry: '31-05-2023',
       domain: 'amirthas@logo.com',
       amount: 766,
-      nextCall: '2023-09-18',
+      nextCall: '18-09-2018',
       action: '',
     },
     {
       id: '3',
       name: 'Kannan',
       mobile: '0056095182',
-      expiry: '2023-05-29',
+      expiry: ' 29-05-2023',
       domain: 'chennai@host.in',
       amount: 3,
       nextCall: '2023-05-29',
@@ -158,7 +158,7 @@ const App = () => {
                     ? rowData.nextCall.toLocaleDateString()
                     : rowData.nextCall
                 }></Column>
-        <Column body={handledIcons}></Column>
+        <Column body={handledIcons} header='Action'></Column>
       </DataTable>
 
       <Modal isOpen={isModalOpen} onRequestClose={closeModal} contentLabel='Product Form'>
@@ -199,7 +199,7 @@ const App = () => {
                   name='expiry'
                   value={formData.expiry}
                   onChange={(e) => handleDateChange('expiry', e.target.value)}
-                  dateFormat='yy-mm-dd'
+                  dateFormat=' dd-mm-yy'
                   showIcon
                   component={Calendar}
                 />

@@ -37,7 +37,7 @@ const initialValues = {
 };
 
 
-const Option = styled.option``;
+
 const FormComponent = () => {
   const [formData, setFormData] = useState([]);
 

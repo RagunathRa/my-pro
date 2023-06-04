@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import RestartAltIcon from '@mui/icons-material/RestartAlt';
 
+
 const Counter = () => {
   const [count, setCount] = useState(0);
   const [liked, setLiked] = useState(false);
@@ -73,15 +74,14 @@ const Counter = () => {
     <div>
       <h1 style={styles.ram}>Counter</h1>
       <div style={styles.container}>
-        <button style={styles.new} onClick={Increment}>
+        <button style={styles.new}    onClick={Increment}>
                   <i className="pi pi-thumbs-up" style={styles.like}></i>
                   <p>like</p>
         </button>
   
               <button style={styles.count} >
                   <i style={styles.one}>({count})</i>
-                  
-              </button>
+                  </button>
 
         <button style={styles.new} onClick={Decrement}>
                   <i className="pi pi-thumbs-down" style={styles.dislike}></i>
