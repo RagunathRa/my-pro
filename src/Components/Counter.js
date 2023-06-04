@@ -82,8 +82,7 @@ const Counter = () => {
   
               <button style={styles.count} >
           <i style={styles.one}>({count})</i>
-          <p>like</p>
-
+         
                   </button>
 
         <button style={styles.new} onClick={Decrement}>
