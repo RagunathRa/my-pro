@@ -76,11 +76,14 @@ const Counter = () => {
       <div style={styles.container}>
         <button style={styles.new}    onClick={Increment}>
                   <i className="pi pi-thumbs-up" style={styles.like}></i>
-                  <p>like</p>
+          <p>like</p>
+          
         </button>
   
               <button style={styles.count} >
-                  <i style={styles.one}>({count})</i>
+          <i style={styles.one}>({count})</i>
+          <p>like</p>
+
                   </button>
 
         <button style={styles.new} onClick={Decrement}>

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import "./App.css";
+
 function Expense() {
   const [balance, setBalance] = useState(0);
   const [amount, setAmount] = useState("");
